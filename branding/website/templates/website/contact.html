@@ -68,14 +68,18 @@
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
             <div class="col-md-8">
-                <h3>Send us a Message</h3>
-                <form name="sentMessage" id="contactForm" action="{% url 'contact' %}" method="POST">
-                    {% csrf_token %}
-                    {{ form|bootstrap }}
-                    <div id="success"></div>
-                    <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                {% if message %}
+                    <div id="message" class="text-center contact-message"><h4>{{message}}</h4></div> 
+                {% else %}
+                    <h4>Send us a Message</h4>
+                    <form name="sentMessage" id="contactForm" action="{% url 'contact' %}" method="POST">
+                        {% csrf_token %}
+                        {{ form|bootstrap }}
+                        
+                        <!-- For success/fail messages -->
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                {% endif %}
             </div>
 
         </div>

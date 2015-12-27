@@ -13,13 +13,14 @@ class ContactForm(forms.ModelForm):
         fields = ['name','phone','email','message']
 
         labels = {
-                'name': 'Full Name',
+                'name': 'Full Name *',
                 'phone': 'Phone',
-                'email': 'E-mail',
-                'message':'Message'
+                'email': 'E-mail *',
+                'message':'Message *'
         }
         error_messages = {
             'name': {'required': _("Please, insert your name.")},
-            'email': {'required': _("Please, insert a valid e-mail.")},
+            'phone':{'invalid_phone':_("Please, insert only numbers and the + character.")},
+            'email': {'required': _("Please, insert an e-mail."), 'invalid': _("Please, insert a valid e-mail.")},
             'message': {'required': _("Your message is empty.")},
         }
