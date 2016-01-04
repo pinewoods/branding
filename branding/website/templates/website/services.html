@@ -1,0 +1,124 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+{% load bootstrap %}
+
+{% block style-block %}
+
+{% endblock style-block %}
+
+{% block navbar-block %}
+    {% with active_menu="services" %}
+        {{ block.super }}
+    {% endwith %}
+{% endblock navbar-block %}
+
+{% block content-block %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Our Services
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="active">Services</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Image Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="http://placehold.it/1200x300" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Service Panels -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">IoT Development</h2>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Remote Control</h4>
+                        <p>We develop Web and Mobile apps to control legacy sensors over Internet.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Cloud-based Apps</h4>
+                        <p>Access our cloud-based services everywhere and anytime.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Dashboards</h4>
+                        <p>Analyze all data from your business operation and get detailed reports in real-time.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-industry fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Automation</h4>
+                        <p>Automate your business processes and reduce your operational costs.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <!-- Call to Action Section -->
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>We can development IoT solutions to deal your business needs and integrate with your legacy sensors and machinery. Request a proposal for our services.</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="{% url 'contact' %}">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+{% endblock content-block %}

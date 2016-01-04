@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'^$', views.index, name='home'),
     url(r'^about$', views.about, name='about'),
     url(r'^contact$', views.contact, name='contact'),
+    url(r'^services$', views.services, name='services'),
+    url(r'^education$', views.education, name='education'),
 ]

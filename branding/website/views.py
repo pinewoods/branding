@@ -13,6 +13,16 @@ def about(request):
     return render(request,
                   'website/about.html')
 
+def services(request):
+
+    return render(request,
+                  'website/services.html')
+
+def education(request):
+
+    return render(request,
+                  'website/education.html')
+
 def contact(request):
 
     message = ''
