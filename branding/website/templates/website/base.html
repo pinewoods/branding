@@ -64,27 +64,21 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                                <a href="portfolio-2-col.html">Boards and Modules</a>
                             </li>
                             <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                                <a href="portfolio-3-col.html">Components</a>
                             </li>
                             <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                                <a href="portfolio-1-col.html">Development Kits</a>
                             </li>
                             <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                                <a href="portfolio-4-col.html">Sensors</a>
                             </li>
                         </ul>
                     </li>
                     <li {% if active_menu == "education" %} class="active" {% endif %}>
                         <a href="{% url 'education' %}">Education</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
                     </li>
                     <li {% if active_menu == "contact" %} class="active" {% endif %}>
                         <a href="{% url 'contact' %}">Contact</a>
@@ -128,12 +122,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="{% static "website/js/bootstrap.min.js" %}"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+    {% block jquery-scripts %}
+    <!-- jQuery Scripts-->
+
+    {% endblock jquery-scripts %}
 
 </body>
 

@@ -34,17 +34,16 @@
         <!-- Features Section -->
         <div class="row">
             <div class="col-md-6">
-                <p>We are passionate Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.2.0</strong>
-                    </li>
-                    <li>jQuery v1.11.0</li>
-                    <li>Font Awesome v4.1.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
+                <p>The Internet of Things is a revolutionary new way of using Technology in 21th century opening new possibilities by connecting people, machines and systems.</p>
+                <p>As a new segment needs professional with the right skills. We offer IoT training courses regarding:</p>
+                    <li>Open-source platforms boards</li>
+                    <li>Sensors</li>
+                    <li>Electronics components</li>
+                    <li>GPRS, 3G and Wifi connections</li>
+                    <li>Cloud integration</li>
+                    <li>Software programing basis</li>
+                    <li>Learning materials</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
             </div>
             <div class="col-md-6">
                 <img class="img-responsive" src="http://placehold.it/700x450" alt="">
@@ -61,36 +60,32 @@
                         <h3 class="panel-title">Basic</h3>
                     </div>
                     <div class="panel-body">
-                        <span class="price"><sup>$</sup>19<sup>99</sup></span>
-                        <span class="period">per month</span>
+                        <span class="price"><sup>R$</sup>199<sup>99</sup></span>
                     </div>
                     <ul class="list-group">
-                        <li class="list-group-item"><strong>1</strong> User</li>
-                        <li class="list-group-item"><strong>5</strong> Projects</li>
-                        <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                        <li class="list-group-item"><strong>10GB</strong> Disk Space</li>
-                        <li class="list-group-item"><strong>100GB</strong> Monthly Bandwidth</li>
-                        <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a>
+                        <li class="list-group-item">Starter Kit</li>
+                        <li class="list-group-item"><strong>1</strong> IoT Project</li>
+                        <li class="list-group-item">Arduino Programming</li>
+                        <li class="list-group-item">Electronics components</li>
+                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">Shop</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="panel panel-primary text-center">
+                <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Intermediate <span class="label label-success">Best Value</span></h3>
+                        <h3 class="panel-title">Intermediate</h3>
                     </div>
                     <div class="panel-body">
-                        <span class="price"><sup>$</sup>39<sup>99</sup></span>
-                        <span class="period">per month</span>
+                        <span class="price"><sup>R$</sup>450<sup>00</sup></span>
                     </div>
                     <ul class="list-group">
-                        <li class="list-group-item"><strong>10</strong> User</li>
-                        <li class="list-group-item"><strong>500</strong> Projects</li>
-                        <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                        <li class="list-group-item"><strong>1000GB</strong> Disk Space</li>
-                        <li class="list-group-item"><strong>10000GB</strong> Monthly Bandwidth</li>
-                        <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a>
+                        <li class="list-group-item">Development Kit</li>
+                        <li class="list-group-item"><strong>2</strong> IoT Projects</li>
+                        <li class="list-group-item">Software Programming basis</li>
+                        <li class="list-group-item">Sensors</li>
+                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">Shop</a>
                         </li>
                     </ul>
                 </div>
@@ -101,16 +96,14 @@
                         <h3 class="panel-title">Advanced</h3>
                     </div>
                     <div class="panel-body">
-                        <span class="price"><sup>$</sup>159<sup>99</sup></span>
-                        <span class="period">per month</span>
+                        <span class="price"><sup>R$</sup>599<sup>00</sup></span>
                     </div>
                     <ul class="list-group">
-                        <li class="list-group-item"><strong>Unlimted</strong> Users</li>
-                        <li class="list-group-item"><strong>Unlimited</strong> Projects</li>
-                        <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                        <li class="list-group-item"><strong>10000GB</strong> Disk Space</li>
-                        <li class="list-group-item"><strong>Unlimited</strong> Monthly Bandwidth</li>
-                        <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a>
+                        <li class="list-group-item">Premium Kit</li>
+                        <li class="list-group-item"><strong>3</strong> Projects</li>
+                        <li class="list-group-item">Cloud Integration</li>
+                        <li class="list-group-item">IoT Communication</li>
+                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">Shop</a>
                         </li>
                     </ul>
                 </div>
@@ -121,3 +114,17 @@
         <hr>
 
 {% endblock content-block %}
+
+
+    {% block jquery-scripts %}
+    <!-- jQuery Scripts-->
+
+    <script>
+
+    $('.panel').hover(
+       function(){ $(this).addClass('panel-primary'); $(this).removeClass('panel-default');},
+       function(){ $(this).addClass('panel-default'); $(this).removeClass('panel-primary');}
+       );
+
+    </script>
+    {% endblock jquery-scripts %}
