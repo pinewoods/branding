@@ -14,3 +14,6 @@ class Contact(models.Model):
     ])
     email = models.EmailField(blank=False, null=False)
     message = models.TextField(blank=False)
+
+#class Product(models.Model):
+

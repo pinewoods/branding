@@ -23,6 +23,11 @@ def education(request):
     return render(request,
                   'website/education.html')
 
+def products(request):
+
+    return render(request,
+                  'website/products.html')
+
 def contact(request):
 
     message = ''
