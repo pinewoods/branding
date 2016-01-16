@@ -1,5 +1,6 @@
 {% extends "website/base.html" %}
 {% load staticfiles %}
+{% load i18n %}
 
 {% block style-block %}
 
@@ -50,39 +51,40 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header text-center">
-                    Internet of Things
+                    {% trans "Internet of Things" %}
                 </h2>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-terminal"></i> Services</h4>
+                        <h4><i class="fa fa-fw fa-terminal"></i> {% trans "Services" %}</h4>
                     </div>
                     <div class="panel-body">
-                        <p>We design custom IoT Solutions for companies with automation systems.</p>
-                        <a href="{% url 'services' %}" class="btn btn-default">Learn More</a>
+                        <p>{% trans "We design custom IoT Solutions for companies with automation systems." %}</p>
+                        {% trans "Learn More" as learn_more %}
+                        <a href="{% url 'services' %}" class="btn btn-default">{{learn_more}}</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-cloud"></i> IoT Products</h4>
+                        <h4><i class="fa fa-fw fa-cloud"></i> {% trans "IoT Products" %}</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Meet our Cloud-based platform and IoT devices to implement in your plant.</p>
-                        <a href="{% url 'products' %}" class="btn btn-default">Learn More</a>
+                        <p>{% trans "Meet our Cloud-based platform and IoT devices to implement in your plant." %}</p>
+                        <a href="{% url 'products' %}" class="btn btn-default">{{learn_more}}</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-graduation-cap"></i> Education</h4>
+                        <h4><i class="fa fa-fw fa-graduation-cap"></i> {% trans "Education" %}</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Learn abouth IoT platforms development and design your own applications.</p>
-                        <a href="{% url 'education' %}" class="btn btn-default">Learn More</a>
+                        <p>{% trans "Learn about IoT platforms development and design your own applications." %}</p>
+                        <a href="{% url 'education' %}" class="btn btn-default">{{learn_more}}</a>
                     </div>
                 </div>
             </div>
@@ -92,37 +94,25 @@
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Industries & Applications</h2>
+                <h2 class="page-header">{% trans "Industries & Applications" %}</h2>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="{% static "website/img/cold-storage.jpg" %}" alt="Cold Storage">
-                </a>
+                <img class="img-responsive img-portfolio" src="{% static "website/img/cold-storage.jpg" %}" alt="{% trans "Cold Storage" %}">  
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="{% static "website/img/field.jpg" %}" alt="Agriculture">
-                </a>
+                <img class="img-responsive img-portfolio" src="{% static "website/img/field.jpg" %}" alt="{% trans "Agriculture" %}">
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="{% static "website/img/water-tank.jpg" %}" alt="Water Tanks">
-                </a>
+                <img class="img-responsive img-portfolio" src="{% static "website/img/water-tank.jpg" %}" alt="{% trans "Water Tanks" %}">
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="{% static "website/img/silos.jpg" %}" alt="Silos">
-                </a>
+                <img class="img-responsive img-portfolio" src="{% static "website/img/silos.jpg" %}" alt="{% trans "Silos" %}">
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="{% static "website/img/factory.jpg" %}" alt="Manufacturing">
-                </a>
+                <img class="img-responsive img-portfolio" src="{% static "website/img/factory.jpg" %}" alt="{% trans "Manufacturing" %}">
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="{% static "website/img/logistics.jpeg" %}" alt="Logistics">
-                </a>
+                <img class="img-responsive img-portfolio" src="{% static "website/img/logistics.jpeg" %}" alt="{% trans "Logistics" %}">
             </div>
         </div>
         <!-- /.row -->

@@ -1,6 +1,6 @@
 {% extends "website/base.html" %}
 {% load staticfiles %}
-{% load bootstrap %}
+{% load i18n %}
 
 {% block style-block %}
 
@@ -20,12 +20,12 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Education
+                <h1 class="page-header">{% trans "Education" %}
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="{% url 'home' %}">Home</a>
+                    <li><a href="{% url 'home' %}">{% trans "Home" %}</a>
                     </li>
-                    <li class="active">Education</li>
+                    <li class="active">{% trans "Education" %}</li>
                 </ol>
             </div>
         </div>
@@ -34,19 +34,21 @@
         <!-- Features Section -->
         <div class="row">
             <div class="col-md-6">
-                <p>The Internet of Things is a revolutionary new way of using Technology in 21th century opening new possibilities by connecting people, machines and systems.</p>
-                <p>As a new segment needs professional with the right skills. We offer IoT training courses regarding:</p>
-                    <li>Open-source platforms boards</li>
-                    <li>Sensors</li>
-                    <li>Electronics components</li>
-                    <li>GPRS, 3G and Wifi connections</li>
-                    <li>Cloud integration</li>
-                    <li>Software programing basis</li>
-                    <li>Learning materials</li>
+                <p>{% trans "The Internet of Things is a revolutionary new way of using Technology in 21th century opening new possibilities by connecting people, machines and systems." %}</p>
+                <p>{% trans "As a new segment needs professional with the right skills. We offer IoT training courses regarding:" %}</p>
+                    <li>{% trans "Open-source platforms boards" %}</li>
+                    <li>{% trans "Sensors" %}</li>
+                    <li>{% trans "Electronics components" %}</li>
+                    <li>{% trans "GPRS, 3G and Wifi connections" %}</li>
+                    {% trans "Cloud Integration" as cloud%}
+                    <li>{{cloud}}</li>
+                    {% trans "Software Programming basis" as programming%}
+                    <li>{{programming}}</li>
+                    <li>{% trans "Learning materials" %}</li>
                 </ul>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="{% static "website/img/education.jpeg" %}" alt="Education">
+                <img class="img-responsive" src="{% static "website/img/education.jpeg" %}" alt="{% trans "Education" %}">
             </div>
         </div>
         <!-- /.row -->
@@ -57,17 +59,19 @@
             <div class="col-md-4">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Basic</h3>
+                        <h3 class="panel-title">{% trans "Basic" %}</h3>
                     </div>
                     <div class="panel-body">
                         <span class="price"><sup>R$</sup>199<sup>99</sup></span>
                     </div>
                     <ul class="list-group">
-                        <li class="list-group-item">Starter Kit</li>
-                        <li class="list-group-item"><strong>1</strong> IoT Project</li>
-                        <li class="list-group-item">Arduino Programming</li>
-                        <li class="list-group-item">Electronics components</li>
-                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">Shop</a>
+                        <li class="list-group-item">{% trans "Starter Kit" %}</li>
+                        {% trans "IoT Projects" as projects %}
+                        <li class="list-group-item"><strong>1</strong> {% trans "IoT Project" %}</li>
+                        <li class="list-group-item">{% trans "Arduino Programming" %}</li>
+                        <li class="list-group-item">{% trans "Electronics components" %}</li>
+                        {% trans "Shop" as shop %}
+                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">{{shop}}</a>
                         </li>
                     </ul>
                 </div>
@@ -75,17 +79,17 @@
             <div class="col-md-4">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Intermediate</h3>
+                        <h3 class="panel-title">{% trans "Intermediate" %}</h3>
                     </div>
                     <div class="panel-body">
                         <span class="price"><sup>R$</sup>450<sup>00</sup></span>
                     </div>
                     <ul class="list-group">
-                        <li class="list-group-item">Development Kit</li>
-                        <li class="list-group-item"><strong>2</strong> IoT Projects</li>
-                        <li class="list-group-item">Software Programming basis</li>
-                        <li class="list-group-item">Sensors</li>
-                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">Shop</a>
+                        <li class="list-group-item">{% trans "Development Kit" %}</li>
+                        <li class="list-group-item"><strong>2</strong> {{projects}}</li>
+                        <li class="list-group-item">{{programming}}</li>
+                        <li class="list-group-item">{% trans "Sensors" %}</li>
+                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">{{shop}}</a>
                         </li>
                     </ul>
                 </div>
@@ -93,17 +97,17 @@
             <div class="col-md-4">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Advanced</h3>
+                        <h3 class="panel-title">{% trans "Advanced" %}</h3>
                     </div>
                     <div class="panel-body">
                         <span class="price"><sup>R$</sup>599<sup>00</sup></span>
                     </div>
                     <ul class="list-group">
-                        <li class="list-group-item">Premium Kit</li>
-                        <li class="list-group-item"><strong>3</strong> Projects</li>
-                        <li class="list-group-item">Cloud Integration</li>
-                        <li class="list-group-item">IoT Communication</li>
-                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">Shop</a>
+                        <li class="list-group-item">{% trans "Premium Kit" %}</li>
+                        <li class="list-group-item"><strong>3</strong> {{projects}}</li>
+                        <li class="list-group-item">{{cloud}}</li>
+                        <li class="list-group-item">{% trans "IoT Communication" %}</li>
+                        <li class="list-group-item"><a href="http://pinewoods.minestore.com.br/" class="btn btn-primary">{{shop}}</a>
                         </li>
                     </ul>
                 </div>

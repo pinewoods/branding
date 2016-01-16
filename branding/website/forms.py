@@ -1,6 +1,6 @@
 from django import forms
 
-from django.utils.translation import gettext as _
+from django.utils.translation import ugettext_lazy as _
 
 from .models import Contact
 
@@ -13,10 +13,10 @@ class ContactForm(forms.ModelForm):
         fields = ['name','phone','email','message']
 
         labels = {
-                'name': 'Full Name *',
-                'phone': 'Phone',
-                'email': 'E-mail *',
-                'message':'Message *'
+                'name': _("Full Name *"),
+                'phone': _("Phone"),
+                'email': _("E-mail *"),
+                'message': _("Message *")
         }
         error_messages = {
             'name': {'required': _("Please, insert your name.")},

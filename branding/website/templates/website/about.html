@@ -1,5 +1,6 @@
 {% extends "website/base.html" %}
 {% load staticfiles %}
+{% load i18n %}
 
 {% block style-block %}
 
@@ -16,12 +17,12 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Company
+                <h1 class="page-header">{% trans "Company" %}
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="{% url 'home' %}">Home</a>
+                    <li><a href="{% url 'home' %}">{% trans "Home" %}</a>
                     </li>
-                    <li class="active">About</li>
+                    <li class="active">{% trans "About" %}</li>
                 </ol>
             </div>
         </div>
@@ -33,10 +34,10 @@
                 <img class="img-responsive" src="http://placehold.it/750x450" alt="">
             </div>
             <div class="col-md-6">
-                <h2>About us</h2>
-                <p>We are a brazilian company for developing Internet of Things technologies for manufactories, agriculture and small business.</p>
-                <p>Our background is cloud-based software development, connecting sensors, machines and platforms over Internet.</p>
-                <p>We believe that Education is the first step to build innovative ideas. We are passionated about share our knowledge and experience.</p>
+                <h2>{% trans "About us" %}</h2>
+                <p>{% trans "We are a brazilian company for developing Internet of Things technologies for manufactories, agriculture and small business." %}</p>
+                <p>{% trans "Our background is cloud-based software development, connecting sensors, machines and platforms over Internet." %}</p>
+                <p>{% trans "We believe that Education is the first step to build innovative ideas. We are passionated about share our knowledge and experience." %}</p>
             </div>
         </div>
         <!-- /.row -->
@@ -44,17 +45,17 @@
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Mission & Core Values</h2>
+                <h2 class="page-header">{% trans "Mission & Core Values" %}</h2>
             </div>
             <div class="col-md-6">
-                <p>We believe that eficiency makes the world better. Using IoT devices to collect and analyze data, it's possible to create smart machines, which not only perceive and interact with its enviroment, but also communicate with people and other machines.</p>
-                <p>Our core values relies in people as the most important and valuable component in this endeavor to breakthrough the way how the information and companies work.</p>
+                <p>{% trans "We believe that eficiency makes the world better. Using IoT devices to collect and analyze data, it's possible to create smart machines, which not only perceive and interact with its enviroment, but also communicate with people and other machines." %}</p>
+                <p>{% trans "Our core values relies in people as the most important and valuable component in this endeavor to breakthrough the way how the information and companies work." %}</p>
                 <ul>
-                    <li>Respect</li>
-                    <li>Integrity</li>
-                    <li>Effiency</li>
-                    <li>Hard work</li>
-                    <li>Commitment</li>
+                    <li>{% trans "Respect" %}</li>
+                    <li>{% trans "Integrity" %}</li>
+                    <li>{% trans "Effiency" %}</li>
+                    <li>{% trans "Hard work" %}</li>
+                    <li>{% trans "Commitment" %}</li>
                 </ul>
             </div>
             <div class="col-md-6">
@@ -65,16 +66,16 @@
         <!-- Team Members -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Our Team</h2>
+                <h2 class="page-header">{% trans "Our Team" %}</h2>
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
                     <img class="img-responsive" src="{% static "website/img/ismael.jpg" %}" alt="">
                     <div class="caption">
                         <h3>Ismael Rodrigues<br>
-                            <small>Business</small>
+                            <small>{% trans "Business" %}</small>
                         </h3>
-                        <p>Worked in Education and Adversiting companies as project manager for 6 years, in charge for business development, suppliers and distribution channels.</p>
+                        <p>{% trans "Worked in Education and Adversiting companies as project manager for 6 years, in charge for business development, suppliers and distribution channels." %}</p>
                         <ul class="list-inline">
                             <li><a href="https://github.com/ismaelrodrigues"><i class="fa fa-2x fa-github-square"></i></a>
                             </li>
@@ -91,9 +92,9 @@
                     <img class="img-responsive" src="{% static "website/img/vido.jpg" %}" alt="">
                     <div class="caption">
                         <h3>Lucas Vido<br>
-                            <small>Operations</small>
+                            <small>{% trans "Operations" %}</small>
                         </h3>
-                        <p>Software engineer from Financial market and he manages the company operation, developing the products concept and architecture using his experience as developer and robotic enthusiast.</p>
+                        <p>{% trans "Software engineer from Financial market and he manages the company operation, developing the products concept and architecture using his experience as developer and robotic enthusiast." %}</p>
                         <ul class="list-inline">
                             <li><a href="https://github.com/Vido"><i class="fa fa-2x fa-github-square"></i></a>
                             </li>

@@ -1,3 +1,4 @@
+from django.utils.translation import ugettext as _
 from django.shortcuts import render
 from .forms import ContactForm
 from .models import Contact
@@ -30,7 +31,7 @@ def products(request):
 
 def contact(request):
 
-    message = ''
+    message = ""
 
     if request.method == 'GET':
         form = ContactForm()
@@ -47,7 +48,7 @@ def contact(request):
             contact = Contact(name=name, phone=phone, email=email, message=message)
             contact.save()
 
-            message = 'your message was successfully sent'
+            message = _("your message was successfully sent")
 
     context = {    
     'form': form,

@@ -1,6 +1,6 @@
 {% extends "website/base.html" %}
 {% load staticfiles %}
-{% load bootstrap %}
+{% load i18n %}
 
 {% block style-block %}
 
@@ -19,12 +19,12 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Products
+                <h1 class="page-header">{% trans "Products" %}
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="{% url 'home' %}">Home</a>
+                    <li><a href="{% url 'home' %}">{% trans "Home" %}</a>
                     </li>
-                    <li class="active">Products</li>
+                    <li class="active">{% trans "Products" %}</li>
                 </ol>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 <h3>
                     <a target="_blank" href="http://pinewoods.minestore.com.br">DEC</a>
                 </h3>
-                <p>Metering device to control the water consumption and tank levels in companies and small business.</p>
+                <p>{% trans "Metering device to control the water consumption and tank levels in companies and small business." %}</p>
             </div>
             <div class="col-md-6 img-portfolio">
                 <a target="_blank" href="http://pinewoods.minestore.com.br">
@@ -48,7 +48,7 @@
                 <h3>
                     <a target="_blank" href="http://pinewoods.minestore.com.br">DCA</a>
                 </h3>
-                <p>Control your soil moisture and water supply of your plantation field to reduce your operation costs.</p>
+                <p>{% trans "Control your soil moisture and water supply of your plantation field to reduce your operation costs." %}</p>
             </div>
         </div>
         <!-- /.row -->

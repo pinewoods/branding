@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load i18n %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,10 +9,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{% trans "An Internet of Things Company" %}">
+    <meta name="keywords" content="{% trans "IoT, Internet of Things, Automation, Industry, Agriculture" %}">
+    <meta name="author" content="RV Metron">
 
-    <title>R&V</title>
+    <title>RV Metron</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static "website/css/bootstrap.min.css" %}" rel="stylesheet">
@@ -49,25 +51,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{% url 'home' %}">R&V Electronics</a>
+                <a class="navbar-brand" href="{% url 'home' %}">RV Metron</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li {% if active_menu == "about" %} class="active" {% endif %}>
-                        <a href="{% url 'about' %}">About</a>
+                        <a href="{% url 'about' %}">{% trans "About" %}</a>
                     </li>
                     <li {% if active_menu == "services" %} class="active" {% endif %}>
-                        <a href="{% url 'services' %}">Services</a>
+                        <a href="{% url 'services' %}">{% trans "Services" %}</a>
                     </li>
                     <li {% if active_menu == "products" %} class="active" {% endif %}>
-                        <a href="{% url 'products' %}">Products</a>
+                        <a href="{% url 'products' %}">{% trans "Products" %}</a>
                     </li>
                     <li {% if active_menu == "education" %} class="active" {% endif %}>
-                        <a href="{% url 'education' %}">Education</a>
+                        <a href="{% url 'education' %}">{% trans "Education" %}</a>
                     </li>
                     <li {% if active_menu == "contact" %} class="active" {% endif %}>
-                        <a href="{% url 'contact' %}">Contact</a>
+                        <a href="{% url 'contact' %}">{% trans "Contact" %}</a>
                     </li>
                     
                 </ul>
@@ -94,7 +96,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; R&V 2016</p>
+                    <p>{% trans "Copyright" %} &copy; R&V 2016</p>
                 </div>
             </div>
         </footer>
