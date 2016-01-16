@@ -6,6 +6,10 @@
 
 python manage.py migrate
 
+#Gerar e Comilar Tradução
+python manage.py makemessages -l pt_BR
+python manage.py compilemessages
+
 python manage.py runserver
 
 
@@ -16,6 +20,7 @@ python manage.py runserver
 - pip3
 - uwsgi
 - uwsgi_plugin34
+- gettext
 
 #Setup steps
 
@@ -26,8 +31,15 @@ python manage.py runserver
 - Create nginx app config file
 
 #Services
+start uwsgi
 service nginx restart
-start uwsgi (uwsgi startup script)
+	#(uwsgi startup script)
+start uwsgi 
+- Se tiver alteração de tradução
+python manage.py compilemessages
 
 #Check if uwsgi is running with configuration
 ps -ef | grep [script init file name e.g uwsgi]
+
+
+
