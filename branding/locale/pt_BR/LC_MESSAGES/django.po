@@ -81,7 +81,7 @@ msgid ""
 "for manufactories, agriculture and small business."
 msgstr ""
 "Nós somos uma startup brasileira de desenvolviemnto em tecnologias da "
-"Internet das Coisaspara indústrias, agricultura e comércio."
+"Internet das Coisas para a indústria, agricultura e comércio."
 
 #: website/templates/website/about.html:39
 msgid ""
