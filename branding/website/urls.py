@@ -17,6 +17,7 @@ Including another URLconf
 from django.conf.urls import url
 
 from . import views
+from django.views.generic import TemplateView
 from django.conf.urls.static import static
 
 urlpatterns = [
@@ -26,4 +27,6 @@ urlpatterns = [
     url(r'^services$', views.services, name='services'),
     url(r'^products$', views.products, name='products'),
     url(r'^education$', views.education, name='education'),
+    url(r'^portfolio$', views.portfolio, name='portfolio'),
+    url(r'^robots\.txt$', TemplateView.as_view(template_name='website/robots.txt')),
 ]

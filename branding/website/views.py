@@ -29,6 +29,11 @@ def products(request):
     return render(request,
                   'website/products.html')
 
+def portfolio(request):
+
+    return render(request,
+                  'website/portfolio.html')
+
 def contact(request):
 
     message = ""

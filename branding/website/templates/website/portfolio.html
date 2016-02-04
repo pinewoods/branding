@@ -7,7 +7,7 @@
 {% endblock style-block %}
 
 {% block navbar-block %}
-    {% with active_menu="products" %}
+    {% with active_menu="portfolio" %}
         {{ block.super }}
     {% endwith %}
 {% endblock navbar-block %}
@@ -19,12 +19,12 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">{% trans "Products" %}
+                <h1 class="page-header">{% trans "Portfolio" %}
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="{% url 'home' %}">{% trans "Home" %}</a>
                     </li>
-                    <li class="active">{% trans "Products" %}</li>
+                    <li class="active">{% trans "Portfolio" %}</li>
                 </ol>
             </div>
         </div>
@@ -33,22 +33,22 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-6 img-portfolio">
-                <a target="_blank" href="http://pinewoods.minestore.com.br">
-                    <img class="img-responsive img-hover" src="{% static "website/img/nivel.jpg" %}" alt="">
+                <a target="_blank" href="http://cores.pinewoods.com.br">
+                    <img class="img-responsive img-hover" src="{% static "website/img/cores.jpg" %}" alt="">
                 </a>
                 <h3>
-                    <a target="_blank" href="http://pinewoods.minestore.com.br">DEC</a>
+                    <a target="_blank" href="http://cores.pinewoods.com.br">Cores que Despertam</a>
                 </h3>
-                <p>{% trans "Metering device to control the water consumption and tank levels in companies and small business." %}</p>
+                <p>Web-mobile site para ipads feito em Django, HTML 5 com animações em jQuery para campanha publicitária em stand em 5 shoppings em SP.</p>
             </div>
             <div class="col-md-6 img-portfolio">
-                <a target="_blank" href="http://pinewoods.minestore.com.br">
-                    <img class="img-responsive img-hover" src="{% static "website/img/dc2.jpg" %}" alt="">
+                <a target="_blank" href="#">
+                    <img class="img-responsive img-hover" src="{% static "website/img/coracao.jpg" %}" alt="">
                 </a>
                 <h3>
-                    <a target="_blank" href="http://pinewoods.minestore.com.br">DC2</a>
+                    <a target="_blank" href="#">Coração Eletrônico</a>
                 </h3>
-                <p>{% trans "Control your soil moisture and water supply of your plantation field to reduce your operation costs." %}</p>
+                <p>Protótipo de circuto eletrônico para executar som e luzes utilizando o AtTiny.</p>
             </div>
         </div>
         <!-- /.row -->

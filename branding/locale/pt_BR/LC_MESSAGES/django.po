@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-16 04:07+0000\n"
+"POT-Creation-Date: 2016-02-04 16:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,9 +110,11 @@ msgid ""
 "collect and analyze data, it's possible to create smart machines, which not "
 "only perceive and interact with its enviroment, but also communicate with "
 "people and other machines."
-msgstr "Nós acreditamos que a eficiência torna o mundo melhor. Usando dispositivo IoT para "
-"coletar e analisar dados, é possívle criar máquinas inteligentes, que além de compreender e "
-"interagem com o ambiente, também se comunicam com pessoas e outros dispositivos."
+msgstr ""
+"Nós acreditamos que a eficiência torna o mundo melhor. Usando dispositivo "
+"IoT para coletar e analisar dados, é possívle criar máquinas inteligentes, "
+"que além de compreender e interagem com o ambiente, também se comunicam com "
+"pessoas e outros dispositivos."
 
 #: website/templates/website/about.html:52
 msgid ""
@@ -158,9 +160,9 @@ msgid ""
 "years, in charge for business development, suppliers and distribution "
 "channels."
 msgstr ""
-"Trabalhou em empresas dos segmentos publicitário e educacional como gerente de projeto por mais de "
-"6 anos, responsável pelo desenvolvimento de novos negócios, dos canais de distribuição "
-"e de fornecimento."
+"Trabalhou em empresas dos segmentos publicitário e educacional como gerente "
+"de projeto por mais de 6 anos, responsável pelo desenvolvimento de novos "
+"negócios, dos canais de distribuição e de fornecimento."
 
 #: website/templates/website/about.html:95
 msgid "Operations"
@@ -173,8 +175,8 @@ msgid ""
 "experience as developer and robotic enthusiast."
 msgstr ""
 "Engenheiro de software do mercado financeiro, gerencia a operação, "
-"desenvolvimento do conceito e arquitetura dos produtos com sua "
-"experiência de desenvolvimento software e de robótica."
+"desenvolvimento do conceito e arquitetura dos produtos com sua experiência "
+"de desenvolvimento software e de robótica."
 
 #: website/templates/website/base.html:12
 msgid "An Internet of Things Company"
@@ -211,8 +213,8 @@ msgid "Contact"
 msgstr "Contato"
 
 #: website/templates/website/base.html:99
-msgid "Copyright"
-msgstr "Todos os Direitos Reservados"
+msgid "Accelerated by"
+msgstr "Incubado por"
 
 #: website/templates/website/contact.html:44
 msgid "Contact Details"
@@ -348,27 +350,27 @@ msgstr ""
 msgid "Industries & Applications"
 msgstr "Segmentos & Aplicações"
 
-#: website/templates/website/index.html:101
+#: website/templates/website/index.html:100
 msgid "Cold Storage"
 msgstr "Câmara Fria"
 
-#: website/templates/website/index.html:106
+#: website/templates/website/index.html:103
 msgid "Agriculture"
 msgstr "Agricultura"
 
-#: website/templates/website/index.html:111
+#: website/templates/website/index.html:106
 msgid "Water Tanks"
 msgstr "Caixa de Água"
 
-#: website/templates/website/index.html:116
+#: website/templates/website/index.html:109
 msgid "Silos"
 msgstr "Silos"
 
-#: website/templates/website/index.html:121
+#: website/templates/website/index.html:112
 msgid "Manufacturing"
 msgstr "Manufatura"
 
-#: website/templates/website/index.html:126
+#: website/templates/website/index.html:115
 msgid "Logistics"
 msgstr "Logística"
 
@@ -448,6 +450,9 @@ msgstr "Entre em Contato"
 #: website/views.py:51
 msgid "your message was successfully sent"
 msgstr "sua mensagem foi enviada com sucesso."
+
+#~ msgid "Copyright"
+#~ msgstr "Todos os Direitos Reservados"
 
 #~ msgid "Brazilian Portuguese"
 #~ msgstr "Português Brasil"
