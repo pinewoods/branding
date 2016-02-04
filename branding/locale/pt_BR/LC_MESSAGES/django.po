@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-04 16:05+0000\n"
+"POT-Creation-Date: 2016-02-04 20:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,13 +61,14 @@ msgstr "Empresa"
 #: website/templates/website/about.html:23
 #: website/templates/website/contact.html:27
 #: website/templates/website/education.html:26
+#: website/templates/website/portfolio.html:25
 #: website/templates/website/products.html:25
 #: website/templates/website/services.html:25
 msgid "Home"
 msgstr "Início"
 
 #: website/templates/website/about.html:25
-#: website/templates/website/base.html:60
+#: website/templates/website/base.html:61
 msgid "About"
 msgstr "Sobre"
 
@@ -186,33 +187,25 @@ msgstr "Empresa de IoT"
 msgid "IoT, Internet of Things, Automation, Industry, Agriculture"
 msgstr "IoT, Internet das Coisas, Automação, Industria, Agricultura"
 
-#: website/templates/website/base.html:63
+#: website/templates/website/base.html:64
 #: website/templates/website/index.html:60
 #: website/templates/website/services.html:27
 msgid "Services"
 msgstr "Serviços"
 
-#: website/templates/website/base.html:66
+#: website/templates/website/base.html:67
 #: website/templates/website/products.html:22
 #: website/templates/website/products.html:27
 msgid "Products"
 msgstr "Produtos"
 
-#: website/templates/website/base.html:69
-#: website/templates/website/education.html:23
-#: website/templates/website/education.html:28
-#: website/templates/website/education.html:51
-#: website/templates/website/index.html:83
-msgid "Education"
-msgstr "Educação"
-
-#: website/templates/website/base.html:72
+#: website/templates/website/base.html:70
 #: website/templates/website/contact.html:24
 #: website/templates/website/contact.html:29
 msgid "Contact"
 msgstr "Contato"
 
-#: website/templates/website/base.html:99
+#: website/templates/website/base.html:97
 msgid "Accelerated by"
 msgstr "Incubado por"
 
@@ -227,6 +220,13 @@ msgstr "Mande uma Mensagem"
 #: website/templates/website/contact.html:81
 msgid "Send Message"
 msgstr "Enviar"
+
+#: website/templates/website/education.html:23
+#: website/templates/website/education.html:28
+#: website/templates/website/education.html:51
+#: website/templates/website/index.html:83
+msgid "Education"
+msgstr "Educação"
 
 #: website/templates/website/education.html:37
 msgid ""
@@ -374,21 +374,26 @@ msgstr "Manufatura"
 msgid "Logistics"
 msgstr "Logística"
 
+#: website/templates/website/portfolio.html:22
+#: website/templates/website/portfolio.html:27
+msgid "Portfolio"
+msgstr ""
+
 #: website/templates/website/products.html:42
 msgid ""
-"Metering device to control the water consumption and tank levels in "
-"companies and small business."
+"Metering device to control the water level in your water tanks in "
+"condominiums and small business."
 msgstr ""
-"Dispositivo de controle de consumo de água e de nível para empresas, "
-"condomínios e comércio."
+"Dispositivo de controle do nível de água nos seus reservatórios para "
+"condomínios e estabelecimentos comerciais."
 
 #: website/templates/website/products.html:51
 msgid ""
-"Control your soil moisture and water supply of your plantation field to "
-"reduce your operation costs."
+"Control your fuel supply and level in real-time to reduce your operation "
+"costs."
 msgstr ""
-"Controle de fornecimento de água para irrigação e qualidade do solo para "
-"redução de custo operacional."
+"Controle de fornecimento combustíveis em tempo-real para reduzir seus custos "
+"operacionais."
 
 #: website/templates/website/services.html:22
 msgid "Our Services"
@@ -447,7 +452,7 @@ msgstr ""
 msgid "Contact Us"
 msgstr "Entre em Contato"
 
-#: website/views.py:51
+#: website/views.py:56
 msgid "your message was successfully sent"
 msgstr "sua mensagem foi enviada com sucesso."
 
