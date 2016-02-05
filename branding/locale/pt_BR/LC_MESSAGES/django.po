@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-04 20:22+0000\n"
+"POT-Creation-Date: 2016-02-05 14:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,6 +212,12 @@ msgstr "Incubado por"
 #: website/templates/website/contact.html:44
 msgid "Contact Details"
 msgstr "Informações"
+
+#: website/templates/website/contact.html:49
+#, fuzzy
+#| msgid "Contact"
+msgid "contact"
+msgstr "Contato"
 
 #: website/templates/website/contact.html:75
 msgid "Send us a Message"
@@ -455,6 +461,11 @@ msgstr "Entre em Contato"
 #: website/views.py:56
 msgid "your message was successfully sent"
 msgstr "sua mensagem foi enviada com sucesso."
+
+#, fuzzy
+#~| msgid "Contact"
+#~ msgid "contato"
+#~ msgstr "Contato"
 
 #~ msgid "Copyright"
 #~ msgstr "Todos os Direitos Reservados"
