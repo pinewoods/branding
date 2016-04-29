@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-05 14:29+0000\n"
+"POT-Creation-Date: 2016-04-29 13:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,22 +77,30 @@ msgid "About us"
 msgstr "Sobre nós"
 
 #: website/templates/website/about.html:38
+#, fuzzy
+#| msgid ""
+#| "We are a brazilian company for developing Internet of Things technologies "
+#| "for manufactories, agriculture and small business."
 msgid ""
-"We are a brazilian company for developing Internet of Things technologies "
-"for manufactories, agriculture and small business."
+"We are a brazilian company developing Internet of Things (IoT) solutions for "
+"manufacturies, agriculture and small business."
 msgstr ""
-"Nós somos uma startup brasileira de desenvolviemnto em tecnologias da "
+"Nós somos uma startup brasileira de desenvolvimento em tecnologias da "
 "Internet das Coisas para a indústria, agricultura e comércio."
 
-#: website/templates/website/about.html:39
+#: website/templates/website/about.html:40
+#, fuzzy
+#| msgid ""
+#| "Our background is cloud-based software development, connecting sensors, "
+#| "machines and platforms over Internet."
 msgid ""
-"Our background is cloud-based software development, connecting sensors, "
+"Our expertise includes cloud-based software development connecting sensors, "
 "machines and platforms over Internet."
 msgstr ""
-"Nosso background é desenvolvimento de software na nuvem, conectando "
+"Nossa expertise inclui desenvolvimento de software na nuvem, conectando "
 "sensores, máquinas e plataformas via Internet."
 
-#: website/templates/website/about.html:40
+#: website/templates/website/about.html:41
 msgid ""
 "We believe that Education is the first step to build innovative ideas. We "
 "are passionated about share our knowledge and experience."
@@ -101,11 +109,11 @@ msgstr ""
 "inovadoras. Nós somos apaixonados por compartilhar nosso conhecimento e "
 "experiência."
 
-#: website/templates/website/about.html:48
+#: website/templates/website/about.html:49
 msgid "Mission & Core Values"
 msgstr "Missão & Valores"
 
-#: website/templates/website/about.html:51
+#: website/templates/website/about.html:52
 msgid ""
 "We believe that eficiency makes the world better. Using IoT devices to "
 "collect and analyze data, it's possible to create smart machines, which not "
@@ -117,7 +125,7 @@ msgstr ""
 "que além de compreender e interagem com o ambiente, também se comunicam com "
 "pessoas e outros dispositivos."
 
-#: website/templates/website/about.html:52
+#: website/templates/website/about.html:53
 msgid ""
 "Our core values relies in people as the most important and valuable "
 "component in this endeavor to breakthrough the way how the information and "
@@ -127,35 +135,35 @@ msgstr ""
 "componente neste empreendimento disruptivo de como a informação e empresas "
 "trabalham."
 
-#: website/templates/website/about.html:54
+#: website/templates/website/about.html:55
 msgid "Respect"
 msgstr "Respeito"
 
-#: website/templates/website/about.html:55
+#: website/templates/website/about.html:56
 msgid "Integrity"
 msgstr "Integridade"
 
-#: website/templates/website/about.html:56
+#: website/templates/website/about.html:57
 msgid "Effiency"
 msgstr "Eficiência"
 
-#: website/templates/website/about.html:57
+#: website/templates/website/about.html:58
 msgid "Hard work"
 msgstr "Trabalhd duro"
 
-#: website/templates/website/about.html:58
+#: website/templates/website/about.html:59
 msgid "Commitment"
 msgstr "Comprometimentos"
 
-#: website/templates/website/about.html:69
+#: website/templates/website/about.html:70
 msgid "Our Team"
 msgstr "Nosso Time"
 
-#: website/templates/website/about.html:76
+#: website/templates/website/about.html:77
 msgid "Business"
 msgstr "Negócios"
 
-#: website/templates/website/about.html:78
+#: website/templates/website/about.html:79
 msgid ""
 "Worked in Education and Adversiting companies as project manager for 6 "
 "years, in charge for business development, suppliers and distribution "
@@ -165,14 +173,19 @@ msgstr ""
 "de projeto por mais de 6 anos, responsável pelo desenvolvimento de novos "
 "negócios, dos canais de distribuição e de fornecimento."
 
-#: website/templates/website/about.html:95
+#: website/templates/website/about.html:96
 msgid "Operations"
 msgstr "Operações"
 
-#: website/templates/website/about.html:97
+#: website/templates/website/about.html:98
+#, fuzzy
+#| msgid ""
+#| "Software engineer from Financial market and he manages the company "
+#| "operation, developing the products concept and architecture using his "
+#| "experience as developer and robotic enthusiast."
 msgid ""
-"Software engineer from Financial market and he manages the company "
-"operation, developing the products concept and architecture using his "
+"Software engineer from the financial sector. He manages Pinewoods' "
+"operations, developing the products concept and architecture using his "
 "experience as developer and robotic enthusiast."
 msgstr ""
 "Engenheiro de software do mercado financeiro, gerencia a operação, "
@@ -331,8 +344,10 @@ msgid "Internet of Things"
 msgstr "Internet das Coisas"
 
 #: website/templates/website/index.html:63
-msgid "We design custom IoT Solutions for companies with automation systems."
-msgstr "Soluções IoT customizadas para empresas com sistemas de automação."
+msgid ""
+"Pinewoods is software/hardware design house. Learn more about what our "
+"custom designed IoT solutions can do for companies "
+msgstr ""
 
 #: website/templates/website/index.html:64
 msgid "Learn More"
@@ -343,12 +358,19 @@ msgid "IoT Products"
 msgstr "Produtos IoT"
 
 #: website/templates/website/index.html:75
+#, fuzzy
+#| msgid ""
+#| "Meet our Cloud-based platform and IoT devices to implement in your plant."
 msgid ""
-"Meet our Cloud-based platform and IoT devices to implement in your plant."
+"Cloud-based platform and IoT devices can take your business to the "
+"Industry4.0 era."
 msgstr "Conheça nossa plataforma e nossos dispositivos IoT para sua fábrica"
 
 #: website/templates/website/index.html:86
-msgid "Learn about IoT platforms development and design your own applications."
+#, fuzzy
+#| msgid ""
+#| "Learn about IoT platforms development and design your own applications."
+msgid "Learn about IoT platforms and design your own applications."
 msgstr ""
 "Aprenda a desenvolver plataformas IoT e construir suas próprias aplicações."
 
@@ -413,38 +435,45 @@ msgstr "Desenvolvimento IoT"
 msgid "Remote Control"
 msgstr "Controle Remoto"
 
-#: website/templates/website/services.html:57
-msgid "We develop Web and Mobile apps to control legacy sensors over Internet."
+#: website/templates/website/services.html:58
+#, fuzzy
+#| msgid ""
+#| "We develop Web and Mobile apps to control legacy sensors over Internet."
+msgid "We develop Web and Mobile apps to control process."
 msgstr "Aplicações Web e Mobile para controlar sensores legados pela Internet."
 
-#: website/templates/website/services.html:70
+#: website/templates/website/services.html:71
 msgid "Cloud-based Apps"
 msgstr "Apps em Cloud"
 
-#: website/templates/website/services.html:71
+#: website/templates/website/services.html:72
 msgid "Access our cloud-based services everywhere and anytime."
 msgstr "Acesse nossos serviços em cloud 24h em qualquer lugar."
 
-#: website/templates/website/services.html:84
+#: website/templates/website/services.html:85
 msgid "Dashboards"
 msgstr "Relatórios"
 
-#: website/templates/website/services.html:85
+#: website/templates/website/services.html:86
+#, fuzzy
+#| msgid ""
+#| "Analyze all data from your business operation and get detailed reports in "
+#| "real-time."
 msgid ""
-"Analyze all data from your business operation and get detailed reports in "
+"Analyze all data from your business' operations and get detailed reports in "
 "real-time."
 msgstr ""
 "Analise os dados do seu negócio e tenha relatórios detalhados em tempo real."
 
-#: website/templates/website/services.html:98
+#: website/templates/website/services.html:99
 msgid "Automation"
 msgstr "Automação"
 
-#: website/templates/website/services.html:99
+#: website/templates/website/services.html:100
 msgid "Automate your business processes and reduce your operational costs."
 msgstr "Automatize seus processos e reduza seus custos operacionais."
 
-#: website/templates/website/services.html:111
+#: website/templates/website/services.html:113
 msgid ""
 "We can supply your demand for IoT solutions to deal your business needs and "
 "integrate with your legacy sensors and machinery. Request a proposal for our "
@@ -454,13 +483,17 @@ msgstr ""
 "negócio e integrar com seu maquinário e sensores legados. Solicite uma "
 "proposta comercial."
 
-#: website/templates/website/services.html:114
+#: website/templates/website/services.html:116
 msgid "Contact Us"
 msgstr "Entre em Contato"
 
 #: website/views.py:56
 msgid "your message was successfully sent"
 msgstr "sua mensagem foi enviada com sucesso."
+
+#~ msgid ""
+#~ "We design custom IoT Solutions for companies with automation systems."
+#~ msgstr "Soluções IoT customizadas para empresas com sistemas de automação."
 
 #, fuzzy
 #~| msgid "Contact"
